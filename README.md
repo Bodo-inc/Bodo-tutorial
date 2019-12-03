@@ -1,5 +1,3 @@
-# Bodo Getting Started Tutorial
-
 ## Setting up your environment
 The easiest and most reliable way to setup Bodo is to create a python environment using conda:
 
@@ -26,3 +24,6 @@ Start Jupyter:
 go to `IPython Clusters` tab. Select the
 number of engines (i.e., cores) you'd like to use and click `Start` next to the
 `mpi` profile. Open the `bodo_getting_started.ipynb` notebook.
+=======
+# Bodo-tutorial
+>>>>>>> 855207446729448d8b762dd0af7a2ec32cd556d8
