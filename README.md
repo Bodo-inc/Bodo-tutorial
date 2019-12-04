@@ -22,7 +22,7 @@ and add the following line:
 Now go to `Bodo-tutorial` and start the Jupyter Notebook:
 
     cd Bodo-tutorial
-    Jupyter notebook
+    jupyter notebook
 
 Then go to *IPython Clusters* tab. Select the
 number of engines (i.e., cores) you'd like to use and click *Start* next to the
@@ -33,6 +33,6 @@ Start with [`bodo_getting_started.ipynb`](https://github.com/Bodo-inc/Bodo-tutor
 and then move on to [`bodo_tutorial.ipynb`](https://github.com/Bodo-inc/Bodo-tutorial/blob/master/bodo_tutorial.ipynb).
 
 _________________________
-More documentation can be found [here](http://docs.bodo.ai).
+More documentation can be found at http://docs.bodo.ai.
 
 More Jupyter Notebook setup instructions for Bodo can be found [here](http://docs.bodo.ai/dev/source/jupyter.html).
