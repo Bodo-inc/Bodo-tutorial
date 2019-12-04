@@ -19,7 +19,7 @@ and add the following line:
 
     c.IPClusterEngines.engine_launcher_class = 'MPIEngineSetLauncher'
 
-Now go to `Bodo-tutorial` and start the Jupyter notebook:
+Now go to `Bodo-tutorial` and start the Jupyter Notebook:
 
     cd Bodo-tutorial
     Jupyter notebook
