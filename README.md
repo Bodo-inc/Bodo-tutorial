@@ -1,28 +1,38 @@
-# Bodo Getting Started Tutorial
+# Bodo Tutorial
+Welcome to Bodo Tutorials!
 
-## Setting up your environment
-The easiest and most reliable way to setup Bodo is to create a python environment using conda:
+First make sure you have Bodo [installed](http://docs.bodo.ai/dev/source/install.html).
 
-#* Linux: `conda create -n bodo_tut -c ehsantn -c numba/label/dev -c defaults -c intel -c conda-forge bodo daal4py pandas=0.23 blas=*=mkl jupyter notebook`
-#* Windows: `conda create -n bodo_tut -c ehsantn -c numba/label/dev -c defaults -c intel bodo daal4py pandas=0.23 blas=*=mkl jupyter notebook`
-* Linux: `conda create -n bodo_tut -c defaults -c conda-forge -c file:///path/to/bodo/pkg bodo pandas=0.24 jupyter ipyparallel`
-* Windows: `conda create -n bodo_tut -c defaults -c intel -c file:///path/to/bodo/pkg bodo pandas=0.24 jupyter ipyparallel`
+To view tutorials with Jupyter Notebook, install `jupyter`, `ipyparallel`, and `mpi4py` in the same enviroment where Bodo is installed:
 
+    # if you followed the above installation instruction, 
+    # make sure you are in the same enviroment: source activate Bodo 
+    conda install jupyter ipyparallel
+    conda install mpi4py -c conda-forge --no-deps
 
-Then activate the environment:
+Create an MPI profile for ipython:
 
-`conda activate bodo_tut`
+    ipython profile create --parallel --profile=mpi
 
-The main material is provided as Juypter notebooks and requires
-# TODO: add link
-`ipyparallel` MPI setup according to Bodo's Jupyter documentation.
+Edit the `~/.ipython/profile_mpi/ipython_config.py` file
+and add the following line:
 
-## Tutorial Notebook
+    c.IPClusterEngines.engine_launcher_class = 'MPIEngineSetLauncher'
 
-Start Jupyter:
+Now go to `Bodo-tutorial` and start the Jupyter Notebook:
 
-`jupyter notebook`
+    cd Bodo-tutorial
+    jupyter notebook
 
-go to `IPython Clusters` tab. Select the
-number of engines (i.e., cores) you'd like to use and click `Start` next to the
-`mpi` profile. Open the `bodo_getting_started.ipynb` notebook.
+Then go to *IPython Clusters* tab. Select the
+number of engines (i.e., cores) you'd like to use and click *Start* next to the
+*mpi* profile. Alternatively, you can use `ipcluster start -n 4 --profile=mpi`
+in a terminal to start the engines (this can take several seconds).
+
+Start with [`bodo_getting_started.ipynb`](https://github.com/Bodo-inc/Bodo-tutorial/blob/master/bodo_getting_started.ipynb) 
+and then move on to [`bodo_tutorial.ipynb`](https://github.com/Bodo-inc/Bodo-tutorial/blob/master/bodo_tutorial.ipynb).
+
+_________________________
+More documentation can be found at http://docs.bodo.ai.
+
+More Jupyter Notebook setup instructions for Bodo can be found [here](http://docs.bodo.ai/dev/source/jupyter.html).
