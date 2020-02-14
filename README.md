@@ -1,7 +1,7 @@
 # Bodo Tutorial
 Welcome to Bodo Tutorials!
 
-First make sure you have Bodo [installed](http://docs.bodo.ai/dev/source/install.html).
+First make sure you have Bodo [installed](http://docs.bodo.ai/latest/source/install.html).
 
 To view tutorials with Jupyter Notebook, install `jupyter`, `ipyparallel`, and `mpi4py` in the same enviroment where Bodo is installed:
 
