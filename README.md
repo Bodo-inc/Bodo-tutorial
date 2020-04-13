@@ -5,10 +5,9 @@ First make sure you have Bodo [installed](http://docs.bodo.ai/latest/source/inst
 
 To view tutorials with Jupyter Notebook, install `jupyter`, `ipyparallel`, and `mpi4py` in the same enviroment where Bodo is installed:
 
-    # if you followed the above installation instruction, 
+    # if you followed the above installation instructions, 
     # make sure you are in the same enviroment: source activate Bodo 
     conda install jupyter ipyparallel
-    conda install mpi4py -c conda-forge --no-deps
 
 Create an MPI profile for ipython:
 
