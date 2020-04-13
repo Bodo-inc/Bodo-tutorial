@@ -34,4 +34,4 @@ and then move on to [`bodo_tutorial.ipynb`](https://github.com/Bodo-inc/Bodo-tut
 _________________________
 More documentation can be found at http://docs.bodo.ai.
 
-More Jupyter Notebook setup instructions for Bodo can be found [here](http://docs.bodo.ai/dev/source/jupyter.html).
+More Jupyter Notebook setup instructions for Bodo can be found [here](http://docs.bodo.ai/latest/source/jupyter.html).
